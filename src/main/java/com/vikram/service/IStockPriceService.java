@@ -1,6 +1,6 @@
 package com.vikram.service;
 
-public interface IStockPrice {
+public interface IStockPriceService {
 
 	public Double findByCompanyName(String companyname);
 	

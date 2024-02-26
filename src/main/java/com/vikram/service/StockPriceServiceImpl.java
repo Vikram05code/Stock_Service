@@ -2,12 +2,17 @@ package com.vikram.service;
 
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.vikram.Exception.StockNotFoundException;
 import com.vikram.entity.StockPrice;
 import com.vikram.repository.StockRepository;
 
-public class StockPriceServiceImpl implements IStockPrice {
+@Service
+public class StockPriceServiceImpl implements IStockPriceService {
 
+	@Autowired
 	private	StockRepository stockRepository;
 	
 	@Override
